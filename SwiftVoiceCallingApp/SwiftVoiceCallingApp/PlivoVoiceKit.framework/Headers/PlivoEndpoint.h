@@ -152,7 +152,6 @@ typedef enum
 - (void)keepAlive;
 
 /* Unregisters an endpoint
- 
  Calling this method with would unregister the SIP endpoint
  */
 - (void)logout;
@@ -168,7 +167,6 @@ typedef enum
 /* Calling this method resets the endpoint */
 
 + (void)resetEndpoint;
-
 
 /* Notifications */
 - (void)onLoginNotification;

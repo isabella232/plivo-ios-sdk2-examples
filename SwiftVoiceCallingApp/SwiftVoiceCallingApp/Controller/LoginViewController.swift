@@ -19,7 +19,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
         loginButton.layer.cornerRadius = UIScreen.main.bounds.size.height * 0.04401408451
         
         self.userNameTextField.delegate = self
