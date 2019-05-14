@@ -587,6 +587,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -925,7 +926,7 @@
 				INFOPLIST_FILE = SwiftVoiceCallingApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ovilp.develop;
+				PRODUCT_BUNDLE_IDENTIFIER = com.plivottest.dummytest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftVoiceCallingApp/SwiftVoiceCallingApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -951,7 +952,7 @@
 				INFOPLIST_FILE = SwiftVoiceCallingApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ovilp.develop;
+				PRODUCT_BUNDLE_IDENTIFIER = com.plivottest.dummytest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftVoiceCallingApp/SwiftVoiceCallingApp-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
@@ -1029,7 +1030,7 @@
 				INFOPLIST_FILE = IntentHandler/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ovilp.develop.intenthandler;
+				PRODUCT_BUNDLE_IDENTIFIER = com.plivottest.dummytest.intenthandler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
@@ -1045,7 +1046,7 @@
 				INFOPLIST_FILE = IntentHandler/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ovilp.develop.intenthandler;
+				PRODUCT_BUNDLE_IDENTIFIER = com.plivottest.dummytest.intenthandler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
