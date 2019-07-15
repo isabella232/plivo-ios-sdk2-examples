@@ -61,6 +61,7 @@
 		47F226C21ED5C2CD0057A39F /* PhoneNumberMetaDataForTesting.json in Resources */ = {isa = PBXBuildFile; fileRef = 47F226C01ED5C2CD0057A39F /* PhoneNumberMetaDataForTesting.json */; };
 		47F226CF1ED720210057A39F /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F226CE1ED720210057A39F /* IntentHandler.swift */; };
 		47F226D31ED720210057A39F /* IntentHandler.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 47F226CC1ED720210057A39F /* IntentHandler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5A1D4CDD22DB6167002F7A54 /* FeedbackRatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1D4CDC22DB6167002F7A54 /* FeedbackRatingViewController.swift */; };
 		5AAF7B3A22A54A5700EE9C05 /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAF7B3922A54A5700EE9C05 /* RatingViewController.swift */; };
 		F841B3501E870444B1780268 /* Pods_SwiftVoiceCallingAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D7CBDBF11A10A1188928A6D /* Pods_SwiftVoiceCallingAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -193,6 +194,7 @@
 		47F226CE1ED720210057A39F /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		47F226D01ED720210057A39F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		483897A3509F2E88E477A9FF /* Pods-SwiftVoiceCallingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftVoiceCallingApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftVoiceCallingApp/Pods-SwiftVoiceCallingApp.debug.xcconfig"; sourceTree = "<group>"; };
+		5A1D4CDC22DB6167002F7A54 /* FeedbackRatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeedbackRatingViewController.swift; path = Controller/FeedbackRatingViewController.swift; sourceTree = "<group>"; };
 		5AAF7B3922A54A5700EE9C05 /* RatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
 		5D7CBDBF11A10A1188928A6D /* Pods_SwiftVoiceCallingAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftVoiceCallingAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DECAA91E9E4D3BB6174A99B /* Pods_SwiftVoiceCallingAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftVoiceCallingAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -331,6 +333,7 @@
 				47F226B51ED597850057A39F /* ContactsViewController.swift */,
 				47F226B71ED5979A0057A39F /* PlivoCallController.swift */,
 				5AAF7B3922A54A5700EE9C05 /* RatingViewController.swift */,
+				5A1D4CDC22DB6167002F7A54 /* FeedbackRatingViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -731,6 +734,7 @@
 				5AAF7B3A22A54A5700EE9C05 /* RatingViewController.swift in Sources */,
 				47F226B61ED597850057A39F /* ContactsViewController.swift in Sources */,
 				47F225D31ED58D0B0057A39F /* NBPhoneNumber.m in Sources */,
+				5A1D4CDD22DB6167002F7A54 /* FeedbackRatingViewController.swift in Sources */,
 				47F225D11ED58D0B0057A39F /* NBNumberFormat.m in Sources */,
 				47966B381EDBF5CF00FA2160 /* UIView+Toast.m in Sources */,
 				47F2258A1ED58A5A0057A39F /* Phone.swift in Sources */,

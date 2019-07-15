@@ -1,6 +1,6 @@
 
-#define kUSERNAME  @"UserName"
-#define kPASSWORD @"Password"
+#define kUSERNAME  @"Automationcaller49611299999512116540"
+#define kPASSWORD @"password"
 #define kAUTHENTICATIONSTATUS  @"AuthenticationStatus"
 #define kCALLSINFO  @"CallsInfo"
 #define kREACHABILITYURL "www.google.com"
@@ -34,5 +34,6 @@
 #define kSTARTACTIONFAILED @"StartCallAction transaction request failed"
 #define kENDACTIONFAILED @"EndCallAction transaction request failed"
 //#define kENDPOINTURL @"@phone.test.plivo.com"
-#define kENDPOINTURL @"@phone.plivo.com"
+//#define kENDPOINTURL @"@phone.plivo.com"
+#define kENDPOINTURL @"@phone-dev.callinsights.plivodev.com"
 

@@ -746,7 +746,7 @@ class PlivoCallController: UIViewController, CXProviderDelegate, CXCallObserverD
     
     func callSubmitFeddbackUI(){
         let _mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let ratingVC: RatingViewController? = _mainStoryboard.instantiateViewController(withIdentifier: "RatingViewController") as? RatingViewController
+        let ratingVC: FeedbackRatingViewController? = _mainStoryboard.instantiateViewController(withIdentifier: "FeedbackRatingViewController") as? FeedbackRatingViewController
         Phone.sharedInstance.setDelegate(ratingVC!)
         DispatchQueue.main.async{
             let _appDelegate: AppDelegate? = (UIApplication.shared.delegate as? AppDelegate)

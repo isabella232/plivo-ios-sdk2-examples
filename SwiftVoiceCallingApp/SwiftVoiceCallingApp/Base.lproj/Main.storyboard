@@ -466,6 +466,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <items>
                                     <navigationItem id="nu0-fB-54R">
+                                        <nil key="title"/>
                                         <barButtonItem key="leftBarButtonItem" style="plain" id="hls-7B-c5E">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ulb-QD-gV8">
                                                 <rect key="frame" x="0.0" y="7" width="71" height="30"/>
@@ -477,6 +478,11 @@
                                                 </connections>
                                             </button>
                                         </barButtonItem>
+                                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="klb-aA-GYR">
+                                            <rect key="frame" x="96" y="7" width="128" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Button"/>
+                                        </button>
                                         <barButtonItem key="rightBarButtonItem" title="Logout" id="3WR-YD-2lo">
                                             <connections>
                                                 <action selector="logoutButtonTapped:" destination="KB7-cH-tVL" id="Zai-2E-6AA"/>
@@ -631,6 +637,91 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hBb-bW-Gl7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1598" y="927"/>
+        </scene>
+        <!--Feedback Rating View Controller-->
+        <scene sceneID="cvv-9Q-yex">
+            <objects>
+                <viewController storyboardIdentifier="FeedbackRatingViewController" id="bl5-Vs-bH5" customClass="FeedbackRatingViewController" customModule="SwiftVoiceCallingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VVg-ku-wje"/>
+                        <viewControllerLayoutGuide type="bottom" id="jjB-wn-wWK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dAG-8b-AGJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please rate the quality of last call" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6a-De-Nvb">
+                                <rect key="frame" x="35" y="28" width="251" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UnN-Ml-D4H">
+                                <rect key="frame" x="73" y="396" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Skip"/>
+                                <connections>
+                                    <action selector="onSkipTapped:" destination="bl5-Vs-bH5" eventType="touchUpInside" id="41G-1U-IOT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvX-Ci-p48">
+                                <rect key="frame" x="206" y="396" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="onSubmitTapped:" destination="bl5-Vs-bH5" eventType="touchUpInside" id="JH0-wX-8Ri"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Re1-bc-9ZF">
+                                <rect key="frame" x="35" y="190" width="250" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3B-9l-UIe">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="♢"/>
+                                        <connections>
+                                            <action selector="test:" destination="bl5-Vs-bH5" eventType="touchUpInside" id="dbC-9r-VZB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSV-vY-IJr">
+                                        <rect key="frame" x="55" y="0.0" width="30" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="♢"/>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jmi-nd-OKN">
+                                        <rect key="frame" x="110" y="0.0" width="30" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="♢"/>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ww-F2-GXf">
+                                        <rect key="frame" x="165" y="0.0" width="30" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="♢"/>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFx-X6-fuT">
+                                        <rect key="frame" x="220" y="0.0" width="30" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="♢"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <outletCollection property="rating" destination="Re1-bc-9ZF" collectionClass="NSMutableArray" id="3UA-Kc-xpe"/>
+                        <outletCollection property="rating" destination="g3B-9l-UIe" collectionClass="NSMutableArray" id="bw0-WY-duS"/>
+                        <outletCollection property="rating" destination="oSV-vY-IJr" collectionClass="NSMutableArray" id="MQO-vF-qhh"/>
+                        <outletCollection property="rating" destination="jmi-nd-OKN" collectionClass="NSMutableArray" id="BxF-Gr-6L6"/>
+                        <outletCollection property="rating" destination="6Ww-F2-GXf" collectionClass="NSMutableArray" id="MMb-K7-tiN"/>
+                        <outletCollection property="rating" destination="UFx-X6-fuT" collectionClass="NSMutableArray" id="SjV-dp-KD0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3hq-l6-atB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2351.25" y="511.26760563380282"/>
         </scene>
     </scenes>
     <resources>
