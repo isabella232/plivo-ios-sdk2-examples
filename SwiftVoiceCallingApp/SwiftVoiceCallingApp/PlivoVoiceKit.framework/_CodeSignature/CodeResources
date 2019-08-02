@@ -10,7 +10,7 @@
 		</data>
 		<key>Frameworks/SocketRocket.framework/SocketRocket</key>
 		<data>
-		bgCjx8MaD+4cgdbyRHruEOHeCz8=
+		E6DuTgMp5pJkwZe57Cp2NskC1A8=
 		</data>
 		<key>Frameworks/SocketRocket.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		9kZrObdjFMvbw+y+rmS4tkxSnIw=
+		2hxmlyUitZEzEIc9Y9RmSmiefmY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -62,11 +62,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bgCjx8MaD+4cgdbyRHruEOHeCz8=
+			E6DuTgMp5pJkwZe57Cp2NskC1A8=
 			</data>
 			<key>hash2</key>
 			<data>
-			x5ufUWwMwU/fOZm0eXviKZs8boo51mGzDKjBP2vO8qM=
+			+vnUmvv900vtyM8DYeyR9Pkm4ABBeZsmhtWALwmEtrU=
 			</data>
 		</dict>
 		<key>Frameworks/SocketRocket.framework/_CodeSignature/CodeResources</key>
