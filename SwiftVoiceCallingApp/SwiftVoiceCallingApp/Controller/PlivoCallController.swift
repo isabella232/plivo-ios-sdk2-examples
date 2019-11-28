@@ -10,7 +10,6 @@ import UIKit
 import CallKit
 import AVFoundation
 import PlivoVoiceKit
-import ReachabilitySwift
 
 class PlivoCallController: UIViewController, CXProviderDelegate, CXCallObserverDelegate, JCDialPadDelegate, PlivoEndpointDelegate {
 
@@ -40,7 +39,6 @@ class PlivoCallController: UIViewController, CXProviderDelegate, CXCallObserverD
     var isSpeakerOn: Bool = false
     var isIncomingCallAnswered: Bool = false
 
-    let reachability = Reachability()!
     
     override func viewDidLoad() {
         
@@ -106,30 +104,12 @@ class PlivoCallController: UIViewController, CXProviderDelegate, CXCallObserverD
         NotificationCenter.default.addObserver(self, selector: #selector(PlivoCallController.appWillTerminate), name: UIApplication.willTerminateNotification, object: nil)
         
         //To check Network Reachability
-        NotificationCenter.default.addObserver(self, selector: #selector(reachabilityChanged),name: ReachabilityChangedNotification,object: reachability)
-        do{
-            try reachability.startNotifier()
-        }catch{
-            print("could not start reachability notifier")
-        }
+        
     }
     
     @objc func reachabilityChanged(note: Notification) {
         
-        let reachability = note.object as! Reachability
         
-        if reachability.isReachable {
-            if reachability.isReachableViaWiFi {
-                print("Reachable via WiFi")
-            } else {
-                print("Reachable via Cellular")
-            }
-        } else {
-            print("Network not reachable")
-            
-            UtilClass.makeToast(kNOINTERNETMSG)
-
-        }
     }
     
     //To unregister with SIP Server
