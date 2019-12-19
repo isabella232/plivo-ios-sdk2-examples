@@ -11,7 +11,6 @@ import UIKit
 import CallKit
 import AVFoundation
 import PlivoVoiceKit
-import ReachabilitySwift
 
 class RatingViewController: UIViewController , PlivoEndpointDelegate{
     var viewController: ContactsViewController?
