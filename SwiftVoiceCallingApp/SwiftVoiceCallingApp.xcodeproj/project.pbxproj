@@ -62,6 +62,7 @@
 		47F226CF1ED720210057A39F /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F226CE1ED720210057A39F /* IntentHandler.swift */; };
 		47F226D31ED720210057A39F /* IntentHandler.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 47F226CC1ED720210057A39F /* IntentHandler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5AAF7B3A22A54A5700EE9C05 /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAF7B3922A54A5700EE9C05 /* RatingViewController.swift */; };
+		CC21C8E024519592001ED816 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC21C8DF24519592001ED816 /* Token.swift */; };
 		F841B3501E870444B1780268 /* Pods_SwiftVoiceCallingAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D7CBDBF11A10A1188928A6D /* Pods_SwiftVoiceCallingAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -198,6 +199,7 @@
 		5DECAA91E9E4D3BB6174A99B /* Pods_SwiftVoiceCallingAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftVoiceCallingAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F37C1029CD90A22898CC534 /* Pods-SwiftVoiceCallingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftVoiceCallingApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftVoiceCallingApp/Pods-SwiftVoiceCallingApp.release.xcconfig"; sourceTree = "<group>"; };
 		60D97E76CFDD69FCDC48BC6B /* Pods-SwiftVoiceCallingAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftVoiceCallingAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftVoiceCallingAppUITests/Pods-SwiftVoiceCallingAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CC21C8DF24519592001ED816 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		E146EF47870C8EF27CE5A02F /* Pods-SwiftVoiceCallingAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftVoiceCallingAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftVoiceCallingAppUITests/Pods-SwiftVoiceCallingAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -359,6 +361,7 @@
 				47F2258B1ED58BA80057A39F /* UtilClass.swift */,
 				47F225881ED58A460057A39F /* Constants.h */,
 				47F226C71ED71E570057A39F /* SwiftVoiceCallingApp-Bridging-Header.h */,
+				CC21C8DF24519592001ED816 /* Token.swift */,
 			);
 			name = "App Files";
 			sourceTree = "<group>";
@@ -746,6 +749,7 @@
 				47F225D81ED58D0B0057A39F /* NSArray+NBAdditions.m in Sources */,
 				47F225D01ED58D0B0057A39F /* NBAsYouTypeFormatter.m in Sources */,
 				47F225D41ED58D0B0057A39F /* NBPhoneNumberDesc.m in Sources */,
+				CC21C8E024519592001ED816 /* Token.swift in Sources */,
 				47F2258C1ED58BA80057A39F /* UtilClass.swift in Sources */,
 				47F2267F1ED58E090057A39F /* UIView+FrameAccessor.m in Sources */,
 				47F226AE1ED595770057A39F /* CallInfo.swift in Sources */,
