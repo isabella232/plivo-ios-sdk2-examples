@@ -178,7 +178,7 @@ class ContactsViewController: UIViewController, UITableViewDelegate, UITableView
                 phoneNumber = phoneNumber.replacingOccurrences(of: ")", with: "")
                 phoneNumber = phoneNumber.replacingOccurrences(of: "-", with: "")
                 
-                plivoVC?.performStartCallAction(with: CallKitInstance.sharedInstance.callUUID!, handle: phoneNumber)
+//                plivoVC?.performStartCallAction(with: CallKitInstance.sharedInstance.callUUID!, handle: phoneNumber)
             }
         }
     

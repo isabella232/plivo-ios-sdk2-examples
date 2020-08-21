@@ -77,7 +77,7 @@ class CallHistoryViewController: UIViewController, UITableViewDelegate, UITableV
         let callInfoArray: [Any] = CallInfo.getCallsInfoArray()
         let callInfo: [Any] = callInfoArray[indexPath.row] as! [Any]
         CallKitInstance.sharedInstance.callUUID = UUID()
-        plivoVC?.performStartCallAction(with: CallKitInstance.sharedInstance.callUUID!, handle: callInfo[0] as! String)
+//        plivoVC?.performStartCallAction(with: CallKitInstance.sharedInstance.callUUID!, handle: callInfo[0] as! String)
     }
     
     @IBAction func logoutButtonTapped(_ sender: Any) {

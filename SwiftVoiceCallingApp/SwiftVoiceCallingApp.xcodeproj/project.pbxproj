@@ -31,8 +31,6 @@
 		47F2267D1ED58E090057A39F /* JCPadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F226771ED58E090057A39F /* JCPadButton.m */; };
 		47F2267E1ED58E090057A39F /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F226791ED58E090057A39F /* MZTimerLabel.m */; };
 		47F2267F1ED58E090057A39F /* UIView+FrameAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F2267B1ED58E090057A39F /* UIView+FrameAccessor.m */; };
-		47F226851ED590020057A39F /* PlivoVoiceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F226841ED590020057A39F /* PlivoVoiceKit.framework */; };
-		47F226871ED590200057A39F /* PlivoVoiceKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 47F226841ED590020057A39F /* PlivoVoiceKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		47F2268A1ED590370057A39F /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F226891ED590370057A39F /* SafariServices.framework */; };
 		47F2268C1ED590410057A39F /* CallKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F2268B1ED590410057A39F /* CallKit.framework */; };
 		47F226901ED590690057A39F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F2268D1ED590690057A39F /* CoreData.framework */; };
@@ -97,7 +95,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				47F226871ED590200057A39F /* PlivoVoiceKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -162,7 +159,6 @@
 		47F226791ED58E090057A39F /* MZTimerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MZTimerLabel.m; path = "Third party/Other/MZTimerLabel.m"; sourceTree = "<group>"; };
 		47F2267A1ED58E090057A39F /* UIView+FrameAccessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+FrameAccessor.h"; path = "Third party/Other/UIView+FrameAccessor.h"; sourceTree = "<group>"; };
 		47F2267B1ED58E090057A39F /* UIView+FrameAccessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+FrameAccessor.m"; path = "Third party/Other/UIView+FrameAccessor.m"; sourceTree = "<group>"; };
-		47F226841ED590020057A39F /* PlivoVoiceKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PlivoVoiceKit.framework; sourceTree = "<group>"; };
 		47F226891ED590370057A39F /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		47F2268B1ED590410057A39F /* CallKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CallKit.framework; path = System/Library/Frameworks/CallKit.framework; sourceTree = SDKROOT; };
 		47F2268D1ED590690057A39F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -226,7 +222,6 @@
 				47F226921ED590690057A39F /* CoreMedia.framework in Frameworks */,
 				47F2268C1ED590410057A39F /* CallKit.framework in Frameworks */,
 				47F2268A1ED590370057A39F /* SafariServices.framework in Frameworks */,
-				47F226851ED590020057A39F /* PlivoVoiceKit.framework in Frameworks */,
 				1E02D4E39DEB53E922DB7416 /* Pods_SwiftVoiceCallingApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,7 +406,6 @@
 		47F226831ED58FF00057A39F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				47F226841ED590020057A39F /* PlivoVoiceKit.framework */,
 				47F226A91ED590CE0057A39F /* UserNotifications.framework */,
 				47F226AA1ED590CE0057A39F /* UserNotificationsUI.framework */,
 				47F226A71ED590C60057A39F /* SystemConfiguration.framework */,
@@ -925,6 +919,7 @@
 			baseConfigurationReference = 483897A3509F2E88E477A9FF /* Pods-SwiftVoiceCallingApp.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = SwiftVoiceCallingApp/SwiftVoiceCallingApp.entitlements;
@@ -937,13 +932,13 @@
 				INFOPLIST_FILE = SwiftVoiceCallingApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ovilp.develop;
+				PRODUCT_BUNDLE_IDENTIFIER = com.plivotest.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftVoiceCallingApp/SwiftVoiceCallingApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.2;
-				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
 			};
 			name = Debug;
 		};
@@ -952,6 +947,7 @@
 			baseConfigurationReference = 5F37C1029CD90A22898CC534 /* Pods-SwiftVoiceCallingApp.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = SwiftVoiceCallingApp/SwiftVoiceCallingApp.entitlements;
@@ -964,12 +960,12 @@
 				INFOPLIST_FILE = SwiftVoiceCallingApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ovilp.develop;
+				PRODUCT_BUNDLE_IDENTIFIER = com.plivotest.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftVoiceCallingApp/SwiftVoiceCallingApp-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.2;
-				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
 			};
 			name = Release;
 		};
@@ -1045,7 +1041,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				OTHER_CFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ovilp.develop.intenthandler;
+				PRODUCT_BUNDLE_IDENTIFIER = com.plivotest.test.intenthandler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
@@ -1063,7 +1059,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				OTHER_CFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ovilp.develop.intenthandler;
+				PRODUCT_BUNDLE_IDENTIFIER = com.plivotest.test.intenthandler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;

@@ -10,9 +10,9 @@ import UIKit
 
 import CallKit
 import AVFoundation
-import PlivoVoiceKit
+//import PlivoVoiceKit
 
-class RatingViewController: UIViewController , PlivoEndpointDelegate{
+class RatingViewController: UIViewController {
     var viewController: ContactsViewController?
     
     @IBOutlet weak var fiveStarHiddenView: UIView!

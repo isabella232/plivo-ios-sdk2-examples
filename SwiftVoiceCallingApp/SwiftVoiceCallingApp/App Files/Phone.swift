@@ -7,61 +7,61 @@
 //
 
 import Foundation
-import PlivoVoiceKit
+//import PlivoVoiceKit
 
 class Phone {
     
     static let sharedInstance = Phone()
 
-    var endpoint: PlivoEndpoint = PlivoEndpoint(["debug":true,"enableTracking":true])
-    private var outCall: PlivoOutgoing?
+//    var endpoint: PlivoEndpoint = PlivoEndpoint(["debug":true,"enableTracking":true])
+//    private var outCall: PlivoOutgoing?
     
     // To register with SIP Server
     
     func login(withUserName userName: String, andPassword password: String) {
         
         UtilClass.makeToastActivity()
-        endpoint.login(userName, andPassword: password)
+//        endpoint.login(userName, andPassword: password)
     }
     
     func login(withUserName userName: String, andPassword password: String, deviceToken token: Data) {
         
         UtilClass.makeToastActivity()
-        endpoint.login(userName, andPassword: password, deviceToken: token)
+//        endpoint.login(userName, andPassword: password, deviceToken: token)
     }
     
     //To unregister with SIP Server
     func logout() {
-        endpoint.logout()
+//        endpoint.logout()
     }
     
     //Register pushkit token
     func registerToken(_ token: Data) {
-        endpoint.registerToken(token)
+//        endpoint.registerToken(token)
     }
     
     //receive and pass on (information or a message)
     func relayVoipPushNotification(_ pushdata: [AnyHashable: Any]) {
-        endpoint.relayVoipPushNotification(pushdata)
+//        endpoint.relayVoipPushNotification(pushdata)
     }
 
-    func call(withDest dest: String, andHeaders headers: [AnyHashable: Any], error: inout NSError?) -> PlivoOutgoing {
-        /* construct SIP URI */
-        let sipUri: String = "sip:\(dest)\(kENDPOINTURL)"
-        /* create PlivoOutgoing object */
-        outCall = (endpoint.createOutgoingCall())!
-        /* do the call */
-        outCall?.call(sipUri, headers: headers, error: &error)
-        return outCall!
+    func call(withDest dest: String, andHeaders headers: [AnyHashable: Any], error: inout NSError?) {
+//        /* construct SIP URI */
+//        let sipUri: String = "sip:\(dest)\(kENDPOINTURL)"
+//        /* create PlivoOutgoing object */
+//        outCall = (endpoint.createOutgoingCall())!
+//        /* do the call */
+//        outCall?.call(sipUri, headers: headers, error: &error)
+//        return outCall!
     }
     
     func setDelegate(_ controllerDelegate: AnyObject) {
-        endpoint.delegate = controllerDelegate
+//        endpoint.delegate = controllerDelegate
     }
     
     //To Configure Audio
     func configureAudioSession() {
-        endpoint.configureAudioDevice()
+//        endpoint.configureAudioDevice()
     }
     
     /*
@@ -70,7 +70,7 @@ class Phone {
      * AVAudioSessionInterruptionTypeEnded
      */
     func startAudioDevice() {
-        endpoint.startAudioDevice()
+//        endpoint.startAudioDevice()
     }
     
     /*
@@ -79,11 +79,11 @@ class Phone {
      * AVAudioSessionInterruptionTypeBegan
      */
     func stopAudioDevice() {
-        endpoint.stopAudioDevice()
+//        endpoint.stopAudioDevice()
     }
     
     func submitFeedback(starRating: Int , issueList: [AnyObject], notes: String, sendConsoleLog: Bool) {
-        let callUUID:String? = endpoint.getLastCallUUID();
-        endpoint.submitCallQualityFeedback(callUUID, starRating,  issueList, notes, sendConsoleLog)
+//        let callUUID:String? = endpoint.getLastCallUUID();
+//        endpoint.submitCallQualityFeedback(callUUID, starRating,  issueList, notes, sendConsoleLog)
     }
 }

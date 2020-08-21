@@ -242,7 +242,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PKPushRegistryDelegate, U
                 let plivoVC: PlivoCallController? = (tabBarContrler?.viewControllers?[2] as? PlivoCallController)
                 tabBarContrler?.selectedViewController = tabBarContrler?.viewControllers?[2]
                 Phone.sharedInstance.setDelegate(plivoVC!)
-                plivoVC?.performStartCallAction(with: CallKitInstance.sharedInstance.callUUID!, handle: contactValue!)
+//                plivoVC?.performStartCallAction(with: CallKitInstance.sharedInstance.callUUID!, handle: contactValue!)
                 window?.rootViewController = tabBarContrler
             }
             return true
@@ -264,7 +264,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PKPushRegistryDelegate, U
         let plivoVC: PlivoCallController? = (tabBarContrler?.viewControllers?[2] as? PlivoCallController)
         tabBarContrler?.selectedViewController = tabBarContrler?.viewControllers?[2]
         Phone.sharedInstance.setDelegate(plivoVC!)
-        plivoVC?.performStartCallAction(with: CallKitInstance.sharedInstance.callUUID!, handle: phoneNumber)
+//        plivoVC?.performStartCallAction(with: CallKitInstance.sharedInstance.callUUID!, handle: phoneNumber)
         window?.rootViewController = tabBarContrler
     }
 }
